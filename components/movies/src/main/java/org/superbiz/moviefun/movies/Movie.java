@@ -16,6 +16,8 @@
  */
 package org.superbiz.moviefun.movies;
 
+
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;

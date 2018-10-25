@@ -21,6 +21,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
@@ -29,7 +30,7 @@ import javax.persistence.metamodel.EntityType;
 import java.util.List;
 
 @Repository
-public class MoviesBean {
+public class MoviesRepository {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
@@ -42,6 +43,7 @@ public class MoviesBean {
 
     @Transactional
     public void addMovie(Movie movie) {
+
         logger.debug("Creating movie with title {}, and year {}", movie.getTitle(), movie.getYear());
 
         entityManager.persist(movie);
