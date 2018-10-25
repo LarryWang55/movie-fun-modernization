@@ -44,7 +44,7 @@ public class MovieServlet extends HttpServlet {
             int rating = Integer.parseInt(request.getParameter("rating"));
             int year = Integer.parseInt(request.getParameter("year"));
 
-            MovieInfo movie = new MovieInfo(null, title, director, genre, rating, year);
+            MovieInfo movie = new MovieInfo(title, director, genre, rating, year);
 
             moviesClient.addMovie(movie);
             response.sendRedirect("moviefun");

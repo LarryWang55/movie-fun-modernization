@@ -15,15 +15,6 @@ public class MovieInfo {
         public MovieInfo() {
         }
 
-        public MovieInfo(Long id, String title, String director, String genre, int rating, int year) {
-            this.id = id;
-            this.director = director;
-            this.title = title;
-            this.year = year;
-            this.genre = genre;
-            this.rating = rating;
-        }
-
         public MovieInfo(String title, String director, String genre, int rating, int year) {
             this.director = director;
             this.title = title;
